@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css"> 
+</head>
+<body>
+    <!-- <div style="display: flex;flex-direction:column;justify-content: center;align-items: center;">
+        <p>Ques 1. What do you mean by OOPS ?</p>
+        <form>
+            <p>Type your answer here !! </p>
+            <textarea cols="50" rows="20">
+
+
+            </textarea>
+            <br>
+            <button type="submit" style="margin: auto;">Check !</button>
+        </form>
+    </div>
+     -->
+
+     <header>
+        <div id="logo">Auto Checker</div>
+        <nav>
+          <ul> 
+            <li><a href="#">How It works?</a></li>
+            <li><a href="#">Contact </a></li>
+          </ul>
+        </nav>  
+      </header>
+
+     <main>
+        <form id="contact" action="./compute" method="POST">
+          <h2>Question Paper</h2>
+          <div id="contact-info">
+            <input type="text"   id="name"  placeholder="Name: " name="name"/>
+            <input type="text" id="email"  placeholder="University Email: " name="email"/>
+          </div>  
+          <input type="text" name="rollno"  id="rollno" placeholder="Roll No:  2K18/IT/___"/>
+          <p>Q.1 What does OOPS mean ? Explain. </p>
+          <textarea id="message" name="answer"></textarea>
+          <button type="submit" form="contact" value="submit">
+            Evaluate
+          </button>
+        </form>
+      </main> 
+
+      
+
+      <footer>This is a AI based Answer checker .</footer>
+</body>
+<script>
+
+// $("button").click(function () {
+//   $(".pop_up").addClass("open");
+// });
+// $(".pop_up .close").click(function () {
+//   $(".pop_up").removeClass("open");
+// });
+</script>
+</html>

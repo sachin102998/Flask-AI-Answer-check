@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+JP:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background: #b71c1c;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.popup-parents { 
+    /* height: 100vh;
+    width: 100%;
+    display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .popup {
+    background: #fff;
+    border-radius: 5px;
+    padding: 40px 20px;
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 0.9s drop;
+} */
+@keyframes drop {
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 50%;
+  }
+}
+
+.popup h1 {
+    font-size: 30px;
+    letter-spacing: -2.5px;
+}
+.popup p {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/* Close icon */
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 40px; 
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../static/mark.css">  -->
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+JP:wght@300;700&display=swap');
+
+    * { 
+        padding: 0; 
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #b71c1c;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .popup-parents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .popup h1 {
+        font-size: 30px; 
+    }
+    .popup p {
+        font-size: 25px;
+        margin-top: 0px;
+    }
+
+/* Close icon */
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 40px; 
+        border: none;
+        cursor: pointer;
+    }
+
+    .popup {
+        top:50%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 40px 20px;
+        width: 50%;
+        position: relative;  
+        animation: 0.9s drop;
+    } 
+
+    .return {
+        background-color: dodgerblue;
+        border: 2px solid blue;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 5px; 
+    }
+    .return:hover{
+        transform: scale(1.1);
+        background-color: blue;
+        cursor: pointer;
+    }
+
+    </style>
+
+</head>
+<body>
+    <!-- <p>You got 100</p> -->
+    <!-- Pop-up box -->
+    <div class="popup-parents" >
+        <div class="popup">
+            <h1>Hello, - {{name}} ({{roll}})</h1>
+            <p>You Got :{{value}}/5</p> 
+            <button class="close" draggable="true">&times;</button>
+            <form action="/">
+                <button class="return">Return </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
